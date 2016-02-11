@@ -1,0 +1,13 @@
+<section class="updates">
+  <h1 class="page-heading">Latest News</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
