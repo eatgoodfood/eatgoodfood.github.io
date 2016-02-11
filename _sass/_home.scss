@@ -1,0 +1,142 @@
+/**
+ * Home styles
+ */
+
+.site-header {
+    border-top: 0px;
+}
+.site-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+.page-content {
+
+    .wrapper {
+        
+        .home {
+            font: 1rem "Avenir Next";
+            padding: 1rem 2rem 2rem 2rem;
+            margin-top: -1.25rem;
+            color: #333;
+            text-align: center;
+
+            section.updates {
+                margin-top: 3rem;
+            }
+
+            .home-col-wrapper {
+                font-size: 15px;
+                color: $grey-color;
+                margin-left: -$spacing-unit / 2;
+                @extend %clearfix;
+                border-bottom: 1px solid #efefef;
+            }
+
+            .home-col {
+                float: left;
+                margin-bottom: $spacing-unit / 2;
+                padding-left: $spacing-unit / 2;
+
+                .logo {
+                    text-align: center;
+
+                    img {
+                        width: 60%;
+                    }
+                    .button {
+                        margin: 1rem 0 0 0;
+                        background: #fafafa;
+                        color: #333;
+                        /* border: 2px solid #333; */
+                        padding: 0 0;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font: bold 0.70rem "Avenir Next";
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+
+            .home-col-1 {
+                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+                width:         calc(20% - (#{$spacing-unit} / 2));
+            }
+
+            .home-col-2 {
+                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+                width:         calc(20% - (#{$spacing-unit} / 2));
+            }
+
+            .home-col-3 {
+                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+                width:         calc(20% - (#{$spacing-unit} / 2));
+            }
+
+            .home-col-4 {
+                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+                width:         calc(20% - (#{$spacing-unit} / 2));
+            }
+
+            .home-col-5 {
+                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+                width:         calc(20% - (#{$spacing-unit} / 2));
+            }
+
+            @include media-query($on-laptop) {
+                .home-col-1,
+                .home-col-2, 
+                .home-col-3,
+                .home-col-4,
+                .home-col-5 {
+                    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+                    width:         calc(100% - (#{$spacing-unit} / 2));
+                }
+            }
+
+            @include media-query($on-palm) {
+                .home-col {
+                    float: none;
+                    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+                    width:         calc(100% - (#{$spacing-unit} / 2));
+                }
+            }
+        }
+    }
+}
+
+footer {
+
+    .wrapper {
+
+        h2.footer-heading {
+            color: #333;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 4px;
+            font-size: 1.0rem;
+        }
+
+        p.footer-links a {
+            list-style: none;
+            font-weight: normal;
+            color: #888;
+            padding: 3rem 0 2rem;
+            margin: 0;
+            font-size: 0.875rem;
+
+            ::after {
+                content: "•";
+                padding: 0 0.2rem 0 0.4rem;
+            }
+        }
+
+
+    }
+}

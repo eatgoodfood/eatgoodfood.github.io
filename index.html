@@ -4,20 +4,75 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="home-col-wrapper">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="home-col home-col-1">
+      <div class="logo egfg">
+        <img src="http://eatgoodfoodgroup.com/wp-content/themes/EGFGv1/assets/img/logo/square_egfg_logo.png" alt="Eat Good Food Group">
+      </div>
+    </div>
+    <div class="home-col home-col-2">
+      <div class="logo">
+        <img src="http://investors.eatgoodfoodgroup.com/img/Eamonns.png" alt="Eamonns">
+        <!--<p class="tagline">Fast food with a pedigree</p>-->
+        <!--<a href="http://www.eamonnsdublinchipper.com" class="button">Visit Website</a>-->
+        <ul class="inline-list social">
+          <a href="https://www.facebook.com/EamonnsADublinChipper"><i class="fi-social-facebook"></i></a>
+        </ul>
+      </div>
+    </div>
+    <div class="home-col home-col-3">
+      <div class="logo">
+        <img src="http://investors.eatgoodfoodgroup.com/img/restaurant-eve.jpg" alt="Restaurant Eve">
+        <!--<<p class="tagline">American Fine Dining</p>-->
+        <!--<<a href="http://www.restauranteve.com" class="button">Visit Website</a>-->
+        <ul class="inline-list social">
+          <a href="https://www.facebook.com/restauranteve"><i class="fi-social-facebook"></i></a>
+          <a href="https://twitter.com/restaurant_eve"><i class="fi-social-twitter"></i></a>
+          <a href="https://www.instagram.com/restaurant_eve/"><i class="fi-social-instagram"></i></a>
+        </ul>
+      </div>
+    </div>
+    <div class="home-col home-col-4">
+      <div class="logo">
+        <img src="http://investors.eatgoodfoodgroup.com/img/society-fair.jpg" alt="Society Fair">
+        <!--<<p class="tagline">Wine Bar • Market • Butcher • Bakery</p>-->
+        <!--<<a href="http://www.societyfair.net" class="button">Visit Website</a>-->
+        <ul class="inline-list social">
+          <a href="https://www.facebook.com/societyfair"><i class="fi-social-facebook"></i></a>
+          <a href="https://twitter.com/societyfair"><i class="fi-social-twitter"></i></a>
+          <a href="https://www.instagram.com/societyfair/"><i class="fi-social-instagram"></i></a>
+        </ul>
+      </div>
+    </div>
+    <div class="home-col home-col-5">
+      <div class="logo">
+        <img src="http://investors.eatgoodfoodgroup.com/img/px-blk.png" alt="PX">
+        <!--<<p class="tagline">1920s Themed Speakeasy</p>-->
+        <!--<<a href="http://www.barpx.com" class="button">Visit Website</a>-->
+        <ul class="inline-list social">
+          <a href="https://www.facebook.com/BarPX/"><i class="fi-social-facebook"></i></a>
+          <a href="https://twitter.com/BarPX"><i class="fi-social-twitter"></i></a>
+          <a href="https://www.instagram.com/barpx/"><i class="fi-social-instagram"></i></a>
+        </ul>
+      </div>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  <section class="updates">
+    <h1 class="page-heading">Latest News</h1>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <div class="post-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 
 </div>
