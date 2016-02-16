@@ -24,6 +24,31 @@
             color: #333;
             text-align: center;
 
+            section.sign-up {
+                margin-top: 1rem;
+
+                form {
+
+                    input[type=text] {
+                        padding: $spacing-unit / 2;
+                        border: 1px solid #efefef;
+                        font-size: 100%;
+                        font-family: "Avenir Next";
+                    }
+                    input[type=submit] {
+                        background: rgb(191, 138, 40);
+                        color: #fff;
+                        font-size: 100%;
+                        text-transform: uppercase;
+                        border-bottom: 4px solid #956c1f;
+                        border-top: 0;
+                        border-right: 0;
+                        border-left: 0;
+                        padding: $spacing-unit / 2;
+                    }
+                }
+            }
+
             section.updates {
                 margin: 0 auto;
                 padding: 1rem 0;
