@@ -31,13 +31,13 @@
 
                 form {
 
-                    input[type=text] {
+                    input.email {
                         padding: $spacing-unit / 2;
                         border: 1px solid #efefef;
                         font-size: 100%;
                         font-family: "Avenir Next";
                     }
-                    input[type=submit] {
+                    input.btn {
                         background: rgb(191, 138, 40);
                         color: #fff;
                         font-size: 100%;
