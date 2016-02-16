@@ -25,7 +25,9 @@
             text-align: center;
 
             section.sign-up {
-                margin-top: 1rem;
+                margin: 5rem auto;
+                padding: 3rem 0;
+                background: #efefef;
 
                 form {
 
@@ -50,12 +52,9 @@
             }
 
             section.updates {
-                margin: 3rem auto 0 auto;
-                padding: 1rem 0;
-                max-width: calc(70% - (#{$spacing-unit} / 2));
+                margin: 2rem auto 2rem auto;
+                max-width: calc(50% - (#{$spacing-unit} / 2));
                 text-align: left;
-                border-bottom: 1px solid #efefef;
-                border-top: 1px solid #efefef;
 
                 h1.page-heading {
                     text-transform: uppercase;
@@ -220,6 +219,9 @@
                     margin: 0 auto;
                     max-width: calc(100% - (#{$spacing-unit} / 2));
                     text-align: left;
+                }
+                section.sign-up {
+                    margin: 2rem auto;
                 }
             }
         }
