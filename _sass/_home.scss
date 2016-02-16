@@ -50,7 +50,7 @@
             }
 
             section.updates {
-                margin: 0 auto;
+                margin: 3rem auto 0 auto;
                 padding: 1rem 0;
                 max-width: calc(70% - (#{$spacing-unit} / 2));
                 text-align: left;
@@ -185,7 +185,7 @@
 
                     p {
                         font: 1rem "Avenir Next";
-                        padding: 1rem 2rem 2rem 2rem;
+                        padding: $spacing-unit / 2;
                         margin-top: -1.25rem;
                         color: #333;
                         text-align: left;
