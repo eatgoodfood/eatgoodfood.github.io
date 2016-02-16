@@ -25,12 +25,19 @@
             text-align: center;
 
             section.updates {
-                margin: 3rem auto 0 auto;
+                margin: 0 auto;
                 padding: 1rem 0;
                 max-width: calc(70% - (#{$spacing-unit} / 2));
                 text-align: left;
                 border-bottom: 1px solid #efefef;
                 border-top: 1px solid #efefef;
+
+                h1.page-heading {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    font-size: 70%;
+                }
             }
 
             .home-col-wrapper {
