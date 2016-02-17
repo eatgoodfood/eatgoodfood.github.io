@@ -36,6 +36,8 @@
                         border: 1px solid #efefef;
                         font-size: 100%;
                         font-family: "Avenir Next";
+                        display: inline-block;
+                        width: 30%;
                     }
                     input.btn {
                         background: rgb(191, 138, 40);
@@ -222,6 +224,14 @@
                 }
                 section.sign-up {
                     margin: 2rem auto;
+
+                    form {
+
+                        input.email {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
