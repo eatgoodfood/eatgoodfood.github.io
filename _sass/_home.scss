@@ -27,7 +27,7 @@
             section.sign-up {
                 margin: 5rem auto;
                 padding: 3rem 0;
-                background: #efefef;
+                background: #fafafa;
 
                 form {
 
@@ -146,14 +146,14 @@
                 }
                 .panel {
                     margin: 3rem auto;
-                    border: 2px solid #333;
+                    //border: 2px solid #333;//
                     background: #fafafa;
 
                     .sign {
                         background: #fafafa;
                         width: 200px;
                         height: 2.4rem;
-                        border: 2px solid #333;
+                        //border: 2px solid #333;
                         position: relative;
                         top: -1.5rem;
                         margin: auto;
@@ -195,7 +195,7 @@
             @include media-query($on-laptop) {
                 section.updates {
                     margin: 3rem auto 0 auto;
-                    max-width: calc(80% - (#{$spacing-unit} / 2));
+                    max-width: calc(50% - (#{$spacing-unit} / 2));
                     text-align: left;
                 }
             }
