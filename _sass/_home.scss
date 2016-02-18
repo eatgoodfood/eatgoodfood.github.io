@@ -92,6 +92,24 @@
                     img {
                         width: 40%;
                     }
+
+                    ul.inline-list.social {
+                        margin-left: $spacing-unit / 2;
+                    }
+
+                    ul.inline-list.social li {
+                        list-style: none;
+                        display: inline-block;
+                        margin-top: 0.5rem;
+
+                        a {
+                            span.icon {
+                                svg {
+                                    margin-right: 0.5rem;
+                                }
+                            }
+                        }
+                    }
                     .button {
                         margin: 1rem 0 0 0;
                         background: #fafafa;
