@@ -15,3 +15,13 @@ url: "http://eatgoodfoodgroup.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+gems: [jekyll-twitter-plugin]
+ # This will require each of these gems automatically.
+
+twitter:
+  consumer_key: u4bNr3wscNWmLMoNBGB3DDr0E
+  consumer_secret: J3xMMADHpWU9Gm3yRbT0idIC9W35NSnv6ZScuczpRaZOIym7I2
+  access_token: 108386929-FdbK082StLm4Gr2IintLbBVZTajYCUQZMfgjVlV6
+  access_token_secret: DnHMw9eGgjB5LoIeXSBPFSO4DU5O4vUw2oLC2MSXkpidF
+

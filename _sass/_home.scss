@@ -66,6 +66,14 @@
                 }
             }
 
+            .umbrella {
+                text-align: center;
+
+                img {
+                    width: 20%;
+                }
+            }
+
             .home-col-wrapper {
                 font-size: 15px;
                 color: $grey-color;
@@ -82,7 +90,7 @@
                     text-align: center;
 
                     img {
-                        width: 60%;
+                        width: 40%;
                     }
                     .button {
                         margin: 1rem 0 0 0;
@@ -101,29 +109,25 @@
             }
 
             .home-col-1 {
-                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-                width:         calc(20% - (#{$spacing-unit} / 2));
+                width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+                width:         calc(25% - (#{$spacing-unit} / 2));
             }
 
             .home-col-2 {
-                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-                width:         calc(20% - (#{$spacing-unit} / 2));
+                width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+                width:         calc(25% - (#{$spacing-unit} / 2));
             }
 
             .home-col-3 {
-                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-                width:         calc(20% - (#{$spacing-unit} / 2));
+                width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+                width:         calc(25% - (#{$spacing-unit} / 2));
             }
 
             .home-col-4 {
-                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-                width:         calc(20% - (#{$spacing-unit} / 2));
+                width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+                width:         calc(25% - (#{$spacing-unit} / 2));
             }
 
-            .home-col-5 {
-                width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-                width:         calc(20% - (#{$spacing-unit} / 2));
-            }
 
             .profile-col-1 {
                 width: -webkit-calc(50% - (#{$spacing-unit} / 2));
