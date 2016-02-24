@@ -20,11 +20,46 @@ instagram_username_eamonns: EamonnsADublinChipper
 markdown: kramdown
 
 gems: [jekyll-twitter-plugin]
- # This will require each of these gems automatically.
+# This will require each of these gems automatically.
 
 twitter:
   consumer_key: u4bNr3wscNWmLMoNBGB3DDr0E
   consumer_secret: J3xMMADHpWU9Gm3yRbT0idIC9W35NSnv6ZScuczpRaZOIym7I2
   access_token: 108386929-FdbK082StLm4Gr2IintLbBVZTajYCUQZMfgjVlV6
   access_token_secret: DnHMw9eGgjB5LoIeXSBPFSO4DU5O4vUw2oLC2MSXkpidF
+
+# Configure prose.io.
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://eatgoodfood.github.io'
+  relativeLinks: 'http://eatgoodfood.github.io/links.jsonp'
+  media: 'media'
+  ignore:
+    - index.html
+    - _config.yml
+    - CNAME
+    - /_layouts
+    - /_includes
+    - /_plugins
+    - /_sass
+  siteurl: "http://eatgoodfoodgroup.com"
+  media: "https://dl.dropboxusercontent.com/u/6041318/eatgoodfoodgroup.com/img/"
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+      		field:
+      			element: "text"
+      			label: "title"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Update"
+              value: "update"
 
