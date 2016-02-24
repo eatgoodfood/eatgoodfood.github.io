@@ -4,18 +4,36 @@ layout: default
 
 <div class="home">
 
-  
+  <!--<div class="color-overlay"></div>-->
+  <div class="hero-wrapper">
   {% include brands.html %}
   
-  <div class="umbrella">
-    <img src="http://investors.eatgoodfoodgroup.com/img/square_egfg_logo.png" alt="Eat Good Food Group">
+  <!--<div class="hero-col hero-col-1">
+    <div class="umbrella">
+      <img src="http://investors.eatgoodfoodgroup.com/img/square_egfg_logo.png" alt="Eat Good Food Group">
+    </div>
+  </div>-->
+
+    <section class="updates">
+      {% for post in site.posts limit:1 %}
+      <h1 class="page-heading">{{ post.date | date: '%B %d, %Y' }}</h1>
+      <ul class="post-list">
+        <li>
+          <h1 class="post-title" itemprop="name headline">{{ post.title }}</h1>
+          <div class="post-content" itemprop="articleBody">
+            {{ post.content }}
+          </div>
+        </li>
+      </ul>
+      {% endfor %}
+    </section>
   </div>
 
-  {% include latest-post.html %}
+  <!--{% include latest-post.html %}-->
 
   {% include sign-up.html %}
 
-  {% include profiles.html %}
+  <!--{% include profiles.html %}-->
 
   
 </div>
