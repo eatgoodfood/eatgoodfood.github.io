@@ -18,7 +18,7 @@ body {
 .site-title {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: $small-font-size;
+    font-size: $smaller-font-size;
     font-weight: bold;
 }
   
@@ -254,12 +254,10 @@ footer {
         max-width: calc(100% - (#{$spacing-unit} / 2));
 
         h2.footer-heading {
-            color: #333;
-            font-size: 1.5rem;
+            font-size: $small-font-size;
             text-transform: uppercase;
             font-weight: bold;
-            letter-spacing: 4px;
-            font-size: 1.0rem;
+            letter-spacing: 2px;
         }
 
         p.footer-links a {
