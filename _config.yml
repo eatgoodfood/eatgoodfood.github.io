@@ -43,7 +43,6 @@ prose:
     - /_plugins
     - /_sass
   siteurl: "http://eatgoodfoodgroup.com"
-  media: "https://dl.dropboxusercontent.com/u/6041318/eatgoodfoodgroup.com/img/"
   metadata:
     _posts:
       - name: "layout"
@@ -51,9 +50,9 @@ prose:
           element: "hidden"
           value: "post"
       - name: "title"
-      		field:
-      			element: "text"
-      			label: "title"
+        field:
+          element: "text"
+          label: "title"
       - name: "categories"
         field:
           element: "multiselect"
@@ -62,4 +61,3 @@ prose:
           options:
             - name: "Update"
               value: "update"
-
