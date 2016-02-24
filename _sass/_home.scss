@@ -83,18 +83,19 @@ body {
     }
 
     .hero-wrapper {
-        background-color: rgba(255,255,255,.9);
+        background-color: rgba(255,255,255,.8);
         z-index: 99;
     }
 
     section.updates {
         margin: 0 auto;
-        padding: 2rem 0;
+        padding: 2rem;
         max-width: calc(50% - (#{$spacing-unit} / 2));
         max-width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         text-align: left;
         position: relative;
         z-index: 1200;
+        background: $white-color;
 
         h1.page-heading {
             text-transform: uppercase;
@@ -106,7 +107,7 @@ body {
 
     section.sign-up {
         padding: 3rem;
-        background: rgba(255,255,255,.9);
+        background: rgba(255,255,255,.8);
         position: relative;
         z-index: 1200;
 
