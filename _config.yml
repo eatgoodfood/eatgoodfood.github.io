@@ -20,6 +20,11 @@ description: > # this means to ignore newlines until "baseurl:"
   The home of Eat Good Food Group.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eatgoodfoodgroup.com" # the base hostname & protocol for your site
+
+# Assets
+cdn_path: https://dl.dropboxusercontent.com/u/6041318/eatgoodfoodgroup.com
+
+# Social media accounts
 twitter_username_eamonns: eamonnschipper
 twitter_username_eve: restaurant_eve
 twitter_username_sf: societyfair
@@ -35,9 +40,6 @@ instagram_username_px: barpx
 
 # Build settings
 markdown: kramdown
-
-gems: [jekyll-twitter-plugin]
-# This will require each of these gems automatically.
 
 twitter:
   consumer_key: u4bNr3wscNWmLMoNBGB3DDr0E
