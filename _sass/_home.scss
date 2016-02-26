@@ -8,15 +8,12 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
 
-@include media-query($on-palm) {
-    body {
-        background: $grey-color-light;
-        background-image: none;
+    @include media-query($on-palm) {
+            background: $grey-color-light;
+            background-image: none;
     }
 }
-
 
 .site-header {
     border-top: 0px;
