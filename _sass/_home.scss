@@ -96,7 +96,7 @@ body {
     }
 
     section.updates {
-        margin: 0 auto;
+        margin: 3rem auto 0 auto;
         padding: 2rem;
         max-width: calc(50% - (#{$spacing-unit} / 2));
         max-width: -webkit-calc(50% - (#{$spacing-unit} / 2));
