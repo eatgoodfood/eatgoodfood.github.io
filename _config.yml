@@ -13,8 +13,17 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eatgoodfoodgroup.com" # the base hostname & protocol for your site
 twitter_username_eamonns: eamonnschipper
+twitter_username_eve: restaurant_eve
+twitter_username_sf: societyfair
+twitter_username_px: BarPX
 facebook_username_eamonns: EamonnsADublinChipper
+facebook_username_eve: restauranteve
+facebook_username_sf: societyfair
+facebook_username_px: BarPX
 instagram_username_eamonns: EamonnsADublinChipper
+instagram_username_eve: restaurant_eve
+instagram_username_sf: societyfair
+instagram_username_px: barpx
 
 # Build settings
 markdown: kramdown
