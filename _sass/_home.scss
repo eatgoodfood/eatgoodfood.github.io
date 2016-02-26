@@ -33,6 +33,11 @@ body {
 .home {
     text-align: center;
 
+    .hero-wrapper {
+    background-color: rgba(255,255,255,.8);
+    z-index: 99;
+    }
+
     .home-col-wrapper {
         @extend %clearfix;
         position: relative;
@@ -78,21 +83,6 @@ body {
     .home-col-1, .home-col-2, .home-col-3, .home-col-4 {
         width: -webkit-calc(25% - (#{$spacing-unit} / 2));
         width:         calc(25% - (#{$spacing-unit} / 2));
-    }
-
-    .color-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(255,255,255,.9);
-        z-index: 99;
-    }
-
-    .hero-wrapper {
-        background-color: rgba(255,255,255,.8);
-        z-index: 99;
     }
 
     section.updates {
