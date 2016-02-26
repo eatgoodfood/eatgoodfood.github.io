@@ -1,0 +1,27 @@
+/**
+ * Post styles
+ */
+article.post {
+	background: $white-color;
+	margin: $spacing-unit * 3 auto $spacing-unit * 3 auto;
+    padding: 2rem;
+    max-width: calc(50% - (#{$spacing-unit} / 2));
+    max-width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+    text-align: left;
+
+    @include media-query($on-palm) {
+		max-width: calc(100% - (#{$spacing-unit} / 2));
+		max-width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+	}
+
+    .post-title, .post-meta {
+    	text-align: center;
+	}
+
+	.post-meta {
+		color: #333;
+	}
+}
+
+
+

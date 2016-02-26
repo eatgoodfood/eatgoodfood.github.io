@@ -105,28 +105,58 @@ body {
         z-index: 1200;
         background: $white-color;
 
-        h1.page-heading {
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: bold;
-            font-size: 70%;
+        .post-meta {
+            color: #333;
+        }
+
+        .post-meta, .post-title {
+            text-align: center;
         }
     }
 
+    section.post-list {
+        margin: 0 auto 3rem auto;
+        padding: 2rem;
+        text-align: left;
+        max-width: calc(50% - (#{$spacing-unit} / 2));
+        max-width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        position: relative;
+        z-index: 1200;
+        background: $white-color;
+
+            h2 {
+                text-align: center;
+            }
+
+            ul.post-list {
+                margin-left: 0;
+                list-style: none;
+                text-align: center;
+            }
+            
+            span.title {
+                margin-left: 1rem;
+            }
+    }
+
     section.sign-up {
-        padding: 3rem;
+        margin: calc(#{$spacing-unit} / 2) auto;
+        padding: 2rem;
+        max-width: calc(50% - (#{$spacing-unit} / 2));
+        max-width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         background: rgba(255,255,255,.8);
         position: relative;
         z-index: 1200;
 
         input.email {
-            padding: calc($spacing-unit / 2);
-            padding: -webkit-calc($spacing-unit / 2);
+            padding: calc(#{$spacing-unit} / 2);
+            padding: -webkit-calc(#{$spacing-unit} / 2);
             border: 1px solid #efefef;
             font-size: $base-font-size;
             font-family: $base-font-family;
             display: inline-block;
-            width: 30%;
+            width: 60%;
+            color: $text-color;
         }
         input.btn {
             background: rgb(191, 138, 40);
@@ -137,9 +167,22 @@ body {
             border-top: 0;
             border-right: 0;
             border-left: 0;
-            padding: calc($spacing-unit / 2);
-            padding: -webkit-calc($spacing-unit / 2);
+            padding: calc(#{$spacing-unit} / 2);
+            padding: -webkit-calc(#{$spacing-unit} / 2);
         }
+        ::-webkit-input-placeholder {
+              color: $text-color; }
+
+            :-moz-placeholder {
+              /* Firefox 18- */
+              color: $text-color; }
+
+            ::-moz-placeholder {
+              /* Firefox 19+ */
+              color: $text-color; }
+
+            :-ms-input-placeholder {
+              color: $text-color; }
     }
 /**
     section.profiles {
@@ -207,8 +250,15 @@ body {
 
         section.updates {
             margin: 3rem auto 0 auto;
-            max-width: calc(70% - (#{$spacing-unit} / 2));
+            max-width: calc(50% - (#{$spacing-unit} / 2));
             text-align: left;
+        }
+        section.post-list {
+            max-width: calc(50% - (#{$spacing-unit} / 2));
+        }
+        section.sign-up {
+            margin: calc(#{$spacing-unit} / 2) auto;
+            max-width: calc(50% - (#{$spacing-unit} / 2));
         }
     }
 
@@ -239,8 +289,16 @@ body {
             padding-left: $spacing-unit;
             padding-right: $spacing-unit;
         }
+        section.post-list {
+            margin: 0 auto;
+            max-width: calc(100% - (#{$spacing-unit} / 2));
+            text-align: left;  
+            padding-left: $spacing-unit;
+            padding-right: $spacing-unit;
+        }
         section.sign-up {
-            margin: 0;
+            margin: 0 auto;
+            max-width: calc(100% - (#{$spacing-unit} / 2));
             padding-left: $spacing-unit;
             padding-right: $spacing-unit;
 
@@ -258,6 +316,7 @@ body {
 footer {
 
     background: #fff;
+    text-align: center;
 
     .wrapper {
         max-width: calc(100% - (#{$spacing-unit} / 2));
