@@ -16,8 +16,8 @@ body {
 }
 
 .site-header {
-    border-top: 0px;
-    background: #fff;
+    border-top: 0;
+    background: $white-color;
     z-index: 1500;
 }
 .site-title {
@@ -30,8 +30,15 @@ body {
 .home {
     text-align: center;
 
+    @include media-query($on-laptop) {
+        padding: 0;
+    }
+    @include media-query($on-palm) {
+        padding: 0;
+    }
+
     .hero-wrapper {
-    background-color: rgba(255,255,255,.8);
+    background-color: $overlay-color;
     z-index: 99;
     }
 
@@ -48,6 +55,10 @@ body {
         margin-bottom: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
 
+        @include media-query($on-palm) {
+            padding-left: 0;
+        }
+
         .logo {
             text-align: center;
             position: relative;
@@ -55,6 +66,10 @@ body {
 
             img {
                 width: 40%;
+
+                @include media-query($on-palm) {
+                    width: 60%;
+                }
             }
 
             ul.inline-list.social {
@@ -80,6 +95,11 @@ body {
     .home-col-1, .home-col-2, .home-col-3, .home-col-4 {
         width: -webkit-calc(25% - (#{$spacing-unit} / 2));
         width:         calc(25% - (#{$spacing-unit} / 2));
+
+        @include media-query($on-palm) {
+            width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+            width:         calc(50% - (#{$spacing-unit} / 2));
+        }
     }
 
     section.updates {
@@ -92,8 +112,22 @@ body {
         z-index: 1200;
         background: $white-color;
 
+        @include media-query($on-laptop) {
+            margin: 3rem auto 0 auto;
+            max-width: calc(50% - (#{$spacing-unit} / 2));
+            text-align: left;
+        }
+
+        @include media-query($on-palm) {
+            margin: 0 auto;
+            max-width: calc(100% - (#{$spacing-unit} / 2));
+            text-align: left;
+            padding-left: $spacing-unit;
+            padding-right: $spacing-unit;
+        }
+
         .post-meta {
-            color: #333;
+            color: $text-color;
         }
 
         .post-meta, .post-title {
@@ -111,19 +145,31 @@ body {
         z-index: 1200;
         background: $white-color;
 
-            h2 {
-                text-align: center;
-            }
+        @include media-query($on-laptop) {
+            max-width: calc(50% - (#{$spacing-unit} / 2));
+        }
 
-            ul.post-list {
-                margin-left: 0;
-                list-style: none;
-                text-align: center;
-            }
-            
-            span.title {
-                margin-left: 1rem;
-            }
+        @include media-query($on-palm) {
+            margin: 0 auto;
+            max-width: calc(100% - (#{$spacing-unit} / 2));
+            text-align: left;  
+            padding-left: $spacing-unit;
+            padding-right: $spacing-unit;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul.post-list {
+            margin-left: 0;
+            list-style: none;
+            text-align: center;
+        }
+        
+        span.title {
+            margin-left: 1rem;
+        }
     }
 
     section.sign-up {
@@ -131,9 +177,21 @@ body {
         padding: 2rem;
         max-width: calc(50% - (#{$spacing-unit} / 2));
         max-width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        background: rgba(255,255,255,.8);
+        background: $overlay-color;
         position: relative;
         z-index: 1200;
+
+        @include media-query($on-laptop) {
+            margin: calc(#{$spacing-unit} / 2) auto;
+            max-width: calc(50% - (#{$spacing-unit} / 2));
+        }
+
+        @include media-query($on-palm) {
+            margin: 0 auto;
+            max-width: calc(100% - (#{$spacing-unit} / 2));
+            padding-left: $spacing-unit;
+            padding-right: $spacing-unit;
+        }
 
         input.email {
             padding: calc(#{$spacing-unit} / 2);
@@ -144,9 +202,33 @@ body {
             display: inline-block;
             width: 60%;
             color: $text-color;
+
+            @include media-query($on-palm) {
+                display: block;
+                width: 100%;
+            }
+
+            ::-webkit-input-placeholder {
+              color: $text-color; 
+            }
+
+            :-moz-placeholder {
+              /* Firefox 18- */
+              color: $text-color; 
+            }
+
+            ::-moz-placeholder {
+              /* Firefox 19+ */
+              color: $text-color; 
+            }
+
+            :-ms-input-placeholder {
+              color: $text-color; 
+            }
         }
+
         input.btn {
-            background: rgb(191, 138, 40);
+            background: $btn-color;
             color: $white-color;
             font-size: $base-font-size;
             text-transform: uppercase;
@@ -157,21 +239,45 @@ body {
             padding: calc(#{$spacing-unit} / 2);
             padding: -webkit-calc(#{$spacing-unit} / 2);
         }
-        ::-webkit-input-placeholder {
-              color: $text-color; }
-
-            :-moz-placeholder {
-              /* Firefox 18- */
-              color: $text-color; }
-
-            ::-moz-placeholder {
-              /* Firefox 19+ */
-              color: $text-color; }
-
-            :-ms-input-placeholder {
-              color: $text-color; }
     }
-/**
+}
+
+footer {
+    background: #fff;
+    text-align: center;
+
+    .wrapper {
+        max-width: calc(100% - (#{$spacing-unit} / 2));
+
+        h2.footer-heading {
+            font-size: $small-font-size;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        p.footer-links a {
+            font-family: $base-font-family;
+            list-style: none;
+            font-weight: $base-font-weight;
+            color: $grey-color;
+            margin: 0;
+            font-size: $small-font-size;
+
+            &:after {
+                content: "•";
+                padding: 0 1rem 0 1rem;
+            }
+
+            &:last-of-type:after {
+                content: "";
+            }
+        }
+    }
+}
+
+/** STYLES FROM REMOVED SECTION
+
     section.profiles {
 
         h3 {
@@ -230,108 +336,4 @@ body {
             }
         }
     }
-
 **/
-    @include media-query($on-laptop) {
-        padding: 0;
-
-        section.updates {
-            margin: 3rem auto 0 auto;
-            max-width: calc(50% - (#{$spacing-unit} / 2));
-            text-align: left;
-        }
-        section.post-list {
-            max-width: calc(50% - (#{$spacing-unit} / 2));
-        }
-        section.sign-up {
-            margin: calc(#{$spacing-unit} / 2) auto;
-            max-width: calc(50% - (#{$spacing-unit} / 2));
-        }
-    }
-
-    @include media-query($on-palm) {
-        padding: 0;
-
-        .home-col-1, .home-col-2, .home-col-3, .home-col-4  {
-            width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-            width:         calc(50% - (#{$spacing-unit} / 2));
-        }
-        .home-col {
-            padding-left: 0;
-
-            .logo {
-
-                img {
-                    width: 60%;
-                }
-            }
-        }
-        .profile-col-1, .profile-col-2  {
-        width: 100%;
-        }
-        section.updates {
-            margin: 0 auto;
-            max-width: calc(100% - (#{$spacing-unit} / 2));
-            text-align: left;
-            padding-left: $spacing-unit;
-            padding-right: $spacing-unit;
-        }
-        section.post-list {
-            margin: 0 auto;
-            max-width: calc(100% - (#{$spacing-unit} / 2));
-            text-align: left;  
-            padding-left: $spacing-unit;
-            padding-right: $spacing-unit;
-        }
-        section.sign-up {
-            margin: 0 auto;
-            max-width: calc(100% - (#{$spacing-unit} / 2));
-            padding-left: $spacing-unit;
-            padding-right: $spacing-unit;
-
-            form {
-
-                input.email {
-                    display: block;
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-footer {
-
-    background: #fff;
-    text-align: center;
-
-    .wrapper {
-        max-width: calc(100% - (#{$spacing-unit} / 2));
-
-        h2.footer-heading {
-            font-size: $small-font-size;
-            text-transform: uppercase;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        p.footer-links a {
-            font-family: $base-font-family;
-            list-style: none;
-            font-weight: $base-font-weight;
-            color: $grey-color;
-            margin: 0;
-            font-size: $small-font-size;
-
-            &:after {
-                content: "•";
-                padding: 0 1rem 0 1rem;
-            }
-
-            &:last-of-type:after {
-                content: "";
-            }
-        }
-
-    }
-}
