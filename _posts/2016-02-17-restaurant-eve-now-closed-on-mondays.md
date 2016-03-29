@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restaurant Eve now closed on Mondays
+title: "Restaurant Eve now closed on Mondays"
 date: "2016-02-17 11:39:52 -0500"
 categories: 
   - update
