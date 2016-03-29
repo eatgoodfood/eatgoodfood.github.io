@@ -16,8 +16,7 @@ brand_3_url: http://barpx.com
 brand_4: Eamonn's
 brand_4_url: http://eamonnsdublinchipper.com
 email: webmaster@eatgoodfoodgroup.com
-description: > # this means to ignore newlines until "baseurl:"
-  The home of Eat Good Food Group.
+description: The home of Eat Good Food Group
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eatgoodfoodgroup.com" # the base hostname & protocol for your site
 
@@ -40,12 +39,6 @@ instagram_username_px: barpx
 
 # Build settings
 markdown: kramdown
-
-twitter:
-  consumer_key: u4bNr3wscNWmLMoNBGB3DDr0E
-  consumer_secret: J3xMMADHpWU9Gm3yRbT0idIC9W35NSnv6ZScuczpRaZOIym7I2
-  access_token: 108386929-FdbK082StLm4Gr2IintLbBVZTajYCUQZMfgjVlV6
-  access_token_secret: DnHMw9eGgjB5LoIeXSBPFSO4DU5O4vUw2oLC2MSXkpidF
 
 # Configure prose.io.
 prose:
