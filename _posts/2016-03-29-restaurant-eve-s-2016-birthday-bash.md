@@ -1,9 +1,11 @@
 ---
 layout: post
-categories: null
-published: false
-title: "Restaurant Eve's 2016 Birthday Bash"
+categories: 
+  - update
+published: true
+title: Restaurant Eve 2016 Birthday Bash
 ---
+
 
 ##Do you have a birthday in April?
 [Restaurant Eve](http://www.restauranteve.com "Restaurant Eve") has a delicious offering to anyone with an April birthday, the gift of a **Five-Course Tasting Menu**.
