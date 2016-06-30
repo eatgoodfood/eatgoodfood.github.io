@@ -6,5 +6,4 @@ categories:
   - update
 published: true
 ---
-
 [Restaurant Eve](http://www.restauranteve.com "Restaurant Eve") will be closed each Monday for the forseeable future, except for special events.
