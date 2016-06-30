@@ -39,37 +39,3 @@ instagram_username_px: barpx
 
 # Build settings
 markdown: kramdown
-
-# Configure prose.io.
-prose:
-  rooturl: '_posts'
-  siteurl: 'http://eatgoodfood.github.io'
-  relativeLinks: 'http://eatgoodfood.github.io/links.jsonp'
-  media: 'media'
-  ignore:
-    - index.html
-    - _config.yml
-    - CNAME
-    - /_layouts
-    - /_includes
-    - /_plugins
-    - /_sass
-  siteurl: "http://eatgoodfoodgroup.com"
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
-      - name: "categories"
-        field:
-          element: "multiselect"
-          label: "Add Categories"
-          placeholder: "Choose Tags"
-          options:
-            - name: "Update"
-              value: "update"
