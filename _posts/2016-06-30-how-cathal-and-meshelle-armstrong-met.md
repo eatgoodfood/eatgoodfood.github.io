@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Cathal and Meshelle Armstrong Met
+title: "How Cathal and Meshelle Armstrong Met"
 date: 2016-06-30 15:42:52 -0500
 categories: 
   - press
