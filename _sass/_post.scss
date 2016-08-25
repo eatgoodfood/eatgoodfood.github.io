@@ -9,12 +9,6 @@ article.post {
     max-width: -webkit-calc(50% - (#{$spacing-unit} / 2));
     text-align: left;
 
-    @include media-query($on-palm) {
-		max-width: calc(100% - (#{$spacing-unit} / 2));
-		max-width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-		margin: $spacing-unit auto 0 auto;
-	}
-
     .post-title, .post-meta {
     	text-align: center;
 	}
@@ -24,5 +18,13 @@ article.post {
 	}
 }
 
+@include media-query($on-palm) {
+
+	article.post {
+		max-width: calc(100% - (#{$spacing-unit} / 2));
+		max-width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+		margin: $spacing-unit auto 0 auto;
+	}
+}
 
 
