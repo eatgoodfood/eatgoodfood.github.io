@@ -20,7 +20,7 @@ description: The home of Eat Good Food Group
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://eatgoodfoodgroup.com" # the base hostname & protocol for your site
 
-# Assets
+# Image Assets
 cdn_path: https://dl.dropboxusercontent.com/u/6041318/eatgoodfoodgroup.com
 
 # Social media accounts
