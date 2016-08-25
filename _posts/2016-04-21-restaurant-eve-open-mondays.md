@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Restaurant Eve open Mondays"
-date: "2016-04-21 11:20:52 -0500"
+title: Restaurant Eve open Mondays
+date: 2016-04-21 11:20:52 -0500
 categories: 
   - update
 published: true

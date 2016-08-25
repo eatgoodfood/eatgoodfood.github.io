@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Restaurant Eve birthday bash"
-date: "2016-03-29 08:38:52 -0500"
+title: Restaurant Eve birthday bash
+date: 2016-03-29 08:38:52 -0500
 categories: 
   - update
 published: true

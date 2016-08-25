@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Chef Armstrong fights his way into Food & Wine"
-date: "2016-02-26 08:47:52 -0500"
+title: Chef Armstrong fights his way into Food & Wine
+date: 2016-02-26 08:47:52 -0500
 categories: 
   - update
 published: true
