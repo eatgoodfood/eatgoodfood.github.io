@@ -2,7 +2,7 @@
   <h1 class="page-heading">Latest News</h1>
 
   <ul class="post-list">
-    {% for post in site.posts limit:1 %}
+    {% for post in site.posts offset:1 %}
       <li>
         <h1 class="post-title" itemprop="name headline">{{ post.title }}</h2>
         <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
