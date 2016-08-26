@@ -4,7 +4,7 @@
   <ul class="post-list">
 {% for press in site.data.press %}
   <li>
-    <a href="{{ press.link }}"><h1 class="post-title" itemprop="name headline">{{ press.title }}</h1></a>
+    <a href="{{ press.link }}"><h1 class="post-title">{{ press.title }}</h1></a>
     <p class="post-meta">{{ press.brand }}, {{ press.date | date: '%B %d, %Y' }} in <a href="{{ press.link }}">{{ press.source }}</a></p>
   </li>
 {% endfor %}
