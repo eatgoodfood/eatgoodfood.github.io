@@ -113,6 +113,7 @@ body {
         position: relative;
         z-index: 1200;
         background: $white-color;
+        border-radius: 5px;
 
         @include media-query($on-laptop) {
             margin: calc(30px / 2) auto;
