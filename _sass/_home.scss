@@ -289,6 +289,15 @@ body {
             font-size: #{$base-font-size}/#{$base-line-height};
         }
 
+        .logo {
+            text-align: center;
+            width: 30%;
+
+            @include media-query($on-palm) {
+                display: none;
+            }
+        }
+
         ul.post-list {
             margin-left: 0;
             list-style: none;
