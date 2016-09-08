@@ -12,7 +12,7 @@
 		  <li>
 		  	<a href="{{ press.link }}"><img class="logo" src="{{ press.logo }}" title="{{ press.source }}" alt="{{ press.source }}"/></a>
 		    <a href="{{ press.link }}"><h1 class="press-title">{{ press.title }}</h1></a>
-		    <p class="post-meta">{{ press.brand }} – <a href="{{ press.link }}">{{ press.source }}</a>: {{ press.date | date: '%b %d, %Y' }}</p>
+		    <p class="post-meta"><span class="brand">{{ press.brand }}</span> – <a href="{{ press.link }}">{{ press.source }}</a>: {{ press.date | date: '%b %d, %Y' }}</p>
 		  </li>
 		
 		</ul>
