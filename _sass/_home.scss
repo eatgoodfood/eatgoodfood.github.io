@@ -277,8 +277,8 @@ body {
             padding-left: 0;
         }
 
-        .post-meta {
-            color: $text-color;
+        .post-meta,  .post-meta a {
+            color: $grey-color;
         }
 
         .post-meta, .press-title {
