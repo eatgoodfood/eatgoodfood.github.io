@@ -326,6 +326,70 @@ body {
             width:         calc(100% - (#{$spacing-unit} / 2));
         }
     }
+
+    /* Instafeed styles */
+
+    section.instagram-wrap {
+        @extend %clearfix;
+        position: relative;
+        z-index: 1000;
+        width: $content-width;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        background: #ffffff;
+        
+        .instagram-content h3 {
+            /*text-transform: uppercase;*/
+            /*letter-spacing: 0.5em;*/
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 50px 0 0 0;
+            color: #7F7354;
+            position: relative;
+        }
+
+        #instafeed .photo-box {
+            background: #fff;
+            margin: 2rem 1.5rem;
+            
+            .image-wrap img {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+     
+            .image-wrap .likes {
+                position: absolute;
+                top: 8px;
+                right: 22px;
+                padding: 2px 8px;
+                /*background: #fff;*/
+                background: rgba(0, 0, 0, 0.7);
+                color: #7F7354;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-weight: bold;
+            }
+            .description {
+                /*background: #fff;*/
+                color: #7F7354;
+                /*letter-spacing: 1px;*/
+                margin-bottom: 0.5rem;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                text-align: left;
+                padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+                /*height: 75px;*/
+                /*overflow: hidden;*/
+                /*white-space: nowrap;*/
+                /*text-overflow: ellipsis;*/
+            }
+        }
+
+        .instagram-btn {
+            text-align: center;
+            margin: 0.5rem 0 4rem 0;
+        }
+    }
 }
 
 footer {
