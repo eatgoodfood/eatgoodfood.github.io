@@ -2,22 +2,30 @@
 
 	<h1 class="page-heading">Recent Press</h1>
 
-	{% assign press-by-date = site.data.press | sort: 'date' | reverse %}
-	{% for press in press-by-date %}
+	
 
-    <div class="press-col press-col-1">
+    <div class="press-col press-col-1 press">
 
-	 	<ul class="post-list">
+    <input class="search" />
+  	<button class="sort" data-sort="brand">Sort by brand</button>
+  	<button class="sort" data-sort="source">Sort by source</button>
+  	<button class="sort" data-sort="date">Sort by date</button>
+
+	 	<ul class="post-list list">
+
+	 	{% for site.data.press | sort: 'date' | reverse %}
+		{% for press in press-by-date %}
 		
 		  <li>
 		  	<a href="{{ press.link }}"><img class="logo" src="{{ press.logo }}" title="{{ press.source }}" alt="{{ press.source }}"/></a>
 		    <a href="{{ press.link }}"><h1 class="press-title">{{ press.title }}</h1></a>
-		    <p class="post-meta"><span class="brand">{{ press.brand }}</span> – <a href="{{ press.link }}">{{ press.source }}</a>: {{ press.date | date: '%b %d, %Y' }}</p>
+		    <p class="post-meta"><span class="brand">{{ press.brand }}</span> – <a href="{{ press.link }}" class="source">{{ press.source }}</a>: <span class="date">{{ press.date | date: '%b %d, %Y' }}</span></p>
 		  </li>
-		
+		{% endfor %}
+
 		</ul>
 	
 	</div>
-	{% endfor %}
+	
 
 </div>

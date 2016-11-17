@@ -6,4 +6,4 @@ categories:
   - press
 published: true
 ---
-Treat your family, friends, colleagues, and clients to Chef Armstrong's seasonal menus and create an affair to remember. From weddings, holiday parties, anniversary dinners, business luncheons, or cocktail parties - [start planning!](http://www.restauranteve.com/parties/ "start planning").
+Treat your family, friends, colleagues, and clients to Chef Armstrong's seasonal menus and create an affair to remember. Weddings and celebrations, holiday parties, anniversary dinners, business luncheons, or cocktail parties - [start planning!](http://www.restauranteve.com/parties/ "start planning").
