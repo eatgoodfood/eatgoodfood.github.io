@@ -6,11 +6,6 @@
 
     <div class="press-col press-col-1 press">
 
-    <input class="search" />
-  	<button class="sort" data-sort="brand">Sort by brand</button>
-  	<button class="sort" data-sort="source">Sort by source</button>
-  	<button class="sort" data-sort="date">Sort by date</button>
-
 	 	<ul class="post-list list">
 
 	 	{% assign press-by-date = site.data.press | sort: 'date' | reverse %}
