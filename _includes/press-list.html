@@ -13,7 +13,7 @@
 
 	 	<ul class="post-list list">
 
-	 	{% for site.data.press | sort: 'date' | reverse %}
+	 	{% assign press-by-date = site.data.press | sort: 'date' | reverse %}
 		{% for press in press-by-date %}
 		
 		  <li>
