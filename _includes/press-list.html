@@ -4,14 +4,14 @@
 
 	
 
-    <div class="press-col press-col-1 press">
+    <div class="press-array">
 
 	 	<ul class="post-list list">
 
 	 	{% assign press-by-date = site.data.press | sort: 'date' | reverse %}
 		{% for press in press-by-date %}
 		
-		  <li>
+		  <li class="press-col press-col-1 press">
 		  	<a href="{{ press.link }}"><img class="logo" src="{{ press.logo }}" title="{{ press.source }}" alt="{{ press.source }}"/></a>
 		    <a href="{{ press.link }}"><h1 class="press-title">{{ press.title }}</h1></a>
 		    <p class="post-meta"><span class="brand">{{ press.brand }}</span> – <a href="{{ press.link }}" class="source">{{ press.source }}</a>: <span class="date">{{ press.date | date: '%b %d, %Y' }}</span></p>
